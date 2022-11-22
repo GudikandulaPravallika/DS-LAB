@@ -12,7 +12,11 @@ def quickSort(array, low, high):
     pi = partition(array, low, high)
     quickSort(array, low, pi - 1)
     quickSort(array, pi + 1, high)
-data = [8, 7, 2, 1, 0, 9, 6]
+data = []
+n=int(input("enter the size of list"))
+for i in range(n):
+    e=int(input("enter the elements:"))
+    data.append(e)
 print("Unsorted Array")
 print(data)
 
