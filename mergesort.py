@@ -26,6 +26,7 @@ def merge(lt,l,mid,h):
         lt[k]=R[j]
         j+=1
         k+=1
+    return lt
 def mergesort(lt,l,h):
     if l<h:
         m=l+(h-l)//2
@@ -33,7 +34,8 @@ def mergesort(lt,l,h):
         mergesort(lt,m+1,h)
         merge(lt,l,m,h)
 lt=[12,35,25,50,24,2,4,1,87]
-print(mergesort(lt,0,len(lt)-1))
+mergesort(lt,0,len(lt)-1)
+print(lt)
         
         
         
