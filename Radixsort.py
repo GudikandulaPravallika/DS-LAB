@@ -21,6 +21,11 @@ def radixSort(array):
     while max_element // place > 0:
         countingSort(array, place)
         place *= 10
-data = [121, 432, 564, 23, 1, 45, 788]
+data = []
+n=int(input("enter the size of list"))
+for i in range(n):
+    x=int(input("enter the elements:"))
+    data.append(x)
+print("Before sorting array is:",data)
 radixSort(data)
 print(data)
